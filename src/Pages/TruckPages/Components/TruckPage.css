@@ -1,0 +1,737 @@
+.driverAccount {
+  width: 100%;
+  height: 100%;
+}
+
+.driverAccount .banner {
+  width: 100%;
+  position: relative;
+}
+
+.driverAccount .banner .bannerPic {
+  width: 100%;
+}
+
+.driverAccount .banner .profilePic {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.driverAccount .bio {
+  margin-top: 80px;
+  padding: 0 0 0 40px;
+  width: 100%;
+}
+
+.driverAccount .bio .info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.driverAccount .bio .info .infoSections {
+  margin-right: 10%;
+  margin-top: 10px;
+}
+
+.driverAccount .heading {
+  font: 14px Poppins;
+  color: black;
+}
+
+.driverAccount .title {
+  font: 18px PoppinsBd;
+  color: black;
+  margin-top: 10px;
+}
+
+.driverAccount .bio .about {
+  padding-right: 70px;
+  margin-top: 20px;
+}
+
+.driverAccount .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.driverAccount .buttonContainer button {
+  width: 285px;
+  height: 45px;
+  border-radius: 10px;
+  border: 0.5px solid #0f71ba;
+  background-color: white;
+  color: #0f71ba;
+  font: 14px PoppinsSb;
+}
+
+.truckPost {
+  padding: 30px 40px 10px 40px;
+}
+
+.truckPost .itemFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.truckPost .itemFlex input {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  font: 14px Poppins;
+  color: #646464;
+  padding-left: 20px;
+}
+
+.truckPost .itemFlex input::placeholder {
+  font: 14px Poppins;
+  color: #646464;
+}
+
+.truckPost .itemFlex textarea {
+  width: 100%;
+  height: 135px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  font: 14px Poppins;
+  color: #646464;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.truckPost .itemFlex textarea::placeholder {
+  font: 14px Poppins;
+  color: #646464;
+}
+
+.truckPost .buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0 !important;
+  margin-top: 10px;
+}
+
+.truckPost .buttonContainer button {
+  font: 14px PoppinsSb;
+  border-radius: 10px;
+  border: none;
+  background-color: #0f71ba;
+  color: white;
+  width: 170px;
+  height: 45px;
+}
+
+.truckMethod {
+  width: 100%;
+  height: 100%;
+  padding: 30px 50px;
+}
+
+.truckMethod .cardFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.truckMethod .cardFlex img {
+  width: 267px;
+  margin-bottom: 10px;
+}
+
+.truckMethod .cardFlex .cardInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  width: 647px;
+  min-height: 162px;
+  border: 0.5px solid black;
+  /* margin-left: 10px; */
+  border-radius: 10px;
+}
+
+.truckMethod .cardFlex .cardInfo .name {
+  margin: 0 60px 0 0;
+}
+
+.truckMethod .cardFlex .cardInfo .title {
+  font: 14px PoppinsBd;
+  color: black;
+}
+
+.truckMethod .cardFlex .cardInfo .info {
+  margin-top: 5px;
+  font: 14px Poppins;
+  color: black;
+}
+
+.truckMethod .cardFlex .cardInfo button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 45px;
+  border-radius: 10px;
+  border: 0.5px solid #0f71ba;
+  color: #0f71ba;
+  font: 14px PoppinsBd;
+  background-color: white;
+}
+
+.truckMethod .addPayment {
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px 20px;
+  background-color: rgba(100, 100, 100, 0.07);
+  margin-top: 20px;
+}
+
+.truckMethod .addPayment .heading {
+  font: 18px PoppinsSb;
+  color: black;
+  margin-bottom: 25px;
+}
+
+.truckMethod .addPayment .bInput {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border: 0.5px solid #646464;
+  padding-left: 20px;
+  font: 14px Poppins;
+  color: #646464;
+  margin-bottom: 15px;
+}
+
+.marginFour {
+  margin-left: 4%;
+}
+
+.truckMethod .addPayment .sInput {
+  width: 48%;
+  height: 45px;
+  border-radius: 10px;
+  border: 0.5px solid #646464;
+  padding-left: 20px;
+  font: 14px Poppins;
+  color: #646464;
+  margin-bottom: 15px;
+}
+
+.truckMethod .addPayment .buttonContainer {
+  margin-top: 50px;
+}
+
+.truckMethod .addPayment .buttonContainer button {
+  width: 170px;
+  background-color: #0f71ba;
+  color: white;
+}
+
+.truckJobs {
+  width: 100%;
+  height: 100%;
+}
+
+.truckJobs .jobsHeader {
+  width: 100%;
+  padding: 20px 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.truckJobs .jobsHeader .titles {
+  display: flex;
+}
+
+.truckJobs .jobsHeader .titles .name {
+  font: 18px Poppins;
+  margin-right: 30px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.borderBottomBlue {
+  border-bottom: 4px solid #0f71ba;
+}
+
+.truckJobs .jobsHeader button {
+  width: 190px;
+  height: 45px;
+  border-radius: 10px;
+  color: white;
+  background-color: #150e56;
+  font: 14px PoppinsBd;
+  border: none;
+}
+
+.truckJobs .jobsHeader button img {
+  margin-right: 10px;
+}
+
+.truckJobs .detailsContainer {
+  width: 100%;
+  padding: 40px 40px 20px 40px;
+}
+
+.truckJobs .mainContainerJobs {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07);
+  margin-top: 10px;
+}
+
+.truckJobs .appliedJobs {
+  /* border-radius: 10px;
+  border: none;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07); */
+  min-height: 51px;
+  font: 14px PoppinsBd;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.truckJobs .applicatantContainer {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07);
+  min-height: 51px;
+  display: flex;
+  flex-direction: column;
+}
+
+.truckJobs .appliedJobs .title {
+  padding-right: 10px;
+  display: flex;
+}
+
+.truckJobs .appliedJobs .title .count {
+  margin-left: 10px;
+  font: 12px Poppins;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.truckJobs .appliedJobs img {
+  width: 10px;
+}
+
+.truckJobs .jobDescription {
+  /* border-radius: 10px;
+  border: none;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07); */
+  margin-top: 20px;
+}
+
+.truckJobs .jobDescription .jobTitle {
+  font: 14px PoppinsBd;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.truckJobs .jobDescription .jobTitle img {
+  width: 10px;
+}
+
+.noBoxShadow {
+  box-shadow: none !important;
+}
+
+.truckJobs .jobDescription .desc {
+  padding: 20px 30px;
+}
+
+.truckJobs .applicatantContainer .applicants {
+  height: 300px;
+  padding: 20px 60px;
+}
+
+.truckJobs .jobDescription .desc .title {
+  font: 12px PoppinsSb;
+  color: black;
+}
+
+.truckJobs .applicatantContainer .applicants .title {
+  font: 12px PoppinsSb;
+  color: #0f71ba;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.truckJobs .jobDescription .desc .details {
+  margin: 10px 0;
+  font: 12px Poppins;
+}
+
+.truckJobs .jobDescription .desc .detailList {
+  margin: 10px 0;
+  font: 12px Poppins;
+}
+
+.truckJobs .jobDescription .buttonContainer {
+  padding: 20px 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.truckJobs .jobDescription .buttonContainer button {
+  width: 169px;
+  height: 45px;
+  border-radius: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  font: 14px PoppinsMd;
+  background-color: transparent;
+  color: #0f71ba;
+}
+
+.modalContainer {
+  padding: 0 130px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.modalContainer .close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.modalImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 5px;
+}
+
+.modalInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.modalInfoContainer .boxInfo {
+  background-color: rgba(15, 113, 186, 0.2);
+  width: 260px;
+  height: 152px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalInfoContainer .boxInfo img {
+  width: 28px;
+  margin-bottom: 10px;
+}
+
+.modalInfoContainer .boxInfo .title {
+  font: 18px Poppins;
+  color: black;
+}
+
+.modalCvContainer {
+  background-color: rgba(15, 113, 186, 0.2);
+  border-radius: 10px;
+  display: flex;
+  min-height: 152px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.modalCvContainer .cvData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalCvContainer .cvData .title {
+  font: 24px PoppinsBd;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.modalCvContainer .cvData .attachment img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.modalCvContainer .cvData .attachment {
+  font: 18px Poppins;
+  color: #0f71ba;
+}
+
+.modalButtonContainer {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalButtonContainer button {
+  width: 285px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.modalButtonContainer .reject {
+  color: #db4747;
+  border: 0.5px solid #db4747;
+  margin-right: 10px;
+}
+
+.modalButtonContainer .contact {
+  color: white;
+  border: 0.5px solid #0f71ba;
+  background-color: #0f71ba;
+}
+
+.truckAdvertisement {
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1600px) {
+  .truckAdvertisement {
+    padding: 60px 150px 20px 150px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .truckAdvertisement {
+    padding: 60px 200px 20px 200px;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  .truckAdvertisement {
+    justify-content: space-evenly;
+  }
+}
+
+.truckAdvertisement .package {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.truckAdvertisement .advertisementCard {
+  width: 202.84px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.truckAdvertisement .advertisementCard .package {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.truckAdvertisement .advertisementCard .heading {
+  font: 36px PoppinsBd;
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  position: relative;
+  z-index: 10;
+}
+
+.truckAdvertisement .advertisementCard .overview {
+  margin-top: 70px;
+  position: relative;
+  padding-top: 30px;
+  z-index: 10;
+  margin-bottom: 140px;
+}
+
+.truckAdvertisement .advertisementCard .overview .main {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 10;
+}
+
+.truckAdvertisement .advertisementCard .overview .list ul li {
+  font: 10px Poppins;
+  color: #0f71ba;
+  margin-bottom: 10px;
+  list-style: none;
+  position: relative;
+}
+
+.truckAdvertisement .advertisementCard .overview .list ul li::before {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  transform: translate(-50%);
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-image: url("../../../assets/images/listBefore.svg");
+}
+
+.truckAdvertisement .advertisementCard .buttonContainerAdvertisement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.truckAdvertisement .advertisementCard .buttonContainerAdvertisement button {
+  width: 130px;
+  height: 25px;
+  border-radius: 20px;
+  color: white;
+  font: 14px Poppins;
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .modalContainer {
+    padding: 20px 30px;
+  }
+
+  .modalContainer .close {
+    top: 50px;
+    right: 50px;
+  }
+
+  .modalImageContainer {
+    margin-bottom: 10px;
+  }
+
+  .modalInfoContainer {
+    margin-bottom: 5px;
+  }
+
+  .modalInfoContainer .boxInfo {
+    width: 215px;
+    height: 152px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .modalContainer {
+    padding: 10px 10px;
+  }
+
+  .modalImageContainer {
+    margin-bottom: 10px;
+  }
+
+  .modalInfoContainer {
+    margin-bottom: 5px;
+    flex-direction: column;
+  }
+
+  .modalInfoContainer .boxInfo {
+    width: 90%;
+    height: 80px;
+  }
+
+  .modalInfoContainer .boxInfo img {
+    width: 20px;
+    margin-bottom: 5px;
+  }
+
+  .modalInfoContainer .boxInfo .title {
+    font: 14px Poppins;
+  }
+
+  .modalCvContainer {
+    min-height: 152px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+  }
+
+  .modalCvContainer .cvData .title {
+    font: 20px PoppinsBd;
+  }
+
+  .modalCvContainer .cvData .attachment img {
+    width: 20px;
+  }
+
+  .modalCvContainer .cvData .attachment {
+    font: 14px Poppins;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .truckMethod {
+    padding: 30px 10px;
+  }
+  .truckMethod .cardFlex {
+    justify-content: center;
+  }
+  .truckMethod .cardFlex .cardInfo {
+    width: 100%;
+  }
+  .truckMethod .cardFlex img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .truckJobs .applicatantContainer .appliedJobs .title {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .truckJobs .jobsHeader button {
+    width: 50px;
+  }
+  .truckJobs .jobsHeader button img {
+    margin-right: 0;
+  }
+}

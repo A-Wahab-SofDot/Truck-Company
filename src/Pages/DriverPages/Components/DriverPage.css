@@ -1,0 +1,289 @@
+.driverAccount {
+  width: 100%;
+  height: 100%;
+}
+
+.driverAccount .banner {
+  width: 100%;
+  position: relative;
+}
+
+.driverAccount .banner .bannerPic {
+  width: 100%;
+}
+
+.driverAccount .banner .profilePic {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.driverAccount .bio {
+  margin-top: 60px;
+  padding: 0 0 0 40px;
+  width: 100%;
+}
+
+.driverAccount .bio .info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.driverAccount .bio .info .infoSections {
+  margin-right: 10%;
+  margin-top: 30px;
+}
+
+.driverAccount .heading {
+  font: 14px Poppins;
+  color: black;
+}
+
+.driverAccount .title {
+  font: 18px PoppinsBd;
+  color: black;
+  margin-top: 10px;
+}
+
+.driverAccount .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.driverAccount .buttonContainer button {
+  width: 285px;
+  height: 45px;
+  border-radius: 10px;
+  border: 0.5px solid #0f71ba;
+  background-color: white;
+  color: #0f71ba;
+  font: 14px PoppinsSb;
+}
+
+@media only screen and (max-width: 768px) {
+  .driverAccount .banner .bannerPic {
+    visibility: hidden;
+  }
+}
+
+.driverJobs {
+  width: 100%;
+  height: 100%;
+  padding: 90px 60px 30px 60px;
+}
+
+.driverJobs .appliedJobs {
+  /* border-radius: 10px;
+  border: none;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07); */
+  min-height: 51px;
+  font: 14px PoppinsBd;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+  /* margin-top: 10px; */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.driverJobs .appliedJobs .title {
+  padding-right: 10px;
+}
+
+.driverJobs .appliedJobs img {
+  width: 10px;
+}
+
+.driverJobs .mainContainerJobs {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07);
+  margin-top: 10px;
+}
+
+.driverJobs .jobDescription .jobTitle {
+  font: 14px PoppinsBd;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.driverJobs .jobDescription .jobTitle img {
+  width: 10px;
+}
+
+.driverJobs .jobDescription .desc {
+  padding: 20px 30px;
+}
+
+.driverJobs .jobDescription .desc .title {
+  font: 12px PoppinsSb;
+  color: black;
+}
+
+.driverJobs .jobDescription .desc .details {
+  margin: 10px 0;
+  font: 12px Poppins;
+}
+
+.driverJobs .jobDescription .desc .detailList {
+  margin: 10px 0;
+  font: 12px Poppins;
+}
+
+.driverJobs .jobDescription .buttonContainer {
+  padding: 20px 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.driverJobs .jobDescription .buttonContainer button {
+  width: 169px;
+  height: 45px;
+  border-radius: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  font: 14px PoppinsMd;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.driverfaqs {
+  width: 100%;
+  height: 100%;
+  padding: 90px 60px 30px 60px;
+}
+
+.driverfaqs .faqsJobs {
+  min-height: 51px;
+  font: 15px PoppinsBd;
+  color: #0f71ba;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.driverfaqs .details {
+  font: 14px Poppins;
+  color: #646464;
+  padding: 0 30px;
+  margin: 10px 0;
+}
+
+.driverContact {
+  width: 100%;
+  height: 100%;
+  padding: 30px 60px 30px 60px;
+}
+
+.driverContact .fixedInfo {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07);
+  min-height: 51px;
+  font: 14px PoppinsBd;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+}
+
+.driverContact .fixedInfo .title {
+  font: 14px Poppins;
+}
+
+.driverContact .dropDown {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.driverContact .messege {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07);
+  min-height: 173px;
+  font: 14px Poppins;
+  color: #646464;
+  padding: 20px;
+}
+
+.driverContact .buttonContainer {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.driverContact .buttonContainer button {
+  width: 169px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #0f71ba;
+  border: none;
+  color: white;
+  font: 14px PoppinsBd;
+}
+
+.ui.fluid.dropdown {
+  border-radius: 10px;
+  min-height: 51px;
+  font: 14px Poppins;
+  line-height: 30px !important;
+  color: #646464;
+  border: none !important;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07) !important;
+}
+
+.ui.selection.dropdown > .dropdown.icon {
+  line-height: 28px;
+}
+
+.ui.dropdown > .text {
+  color: #646464;
+  font: 14px Poppins;
+}
+
+@media only screen and (max-width: 767px) {
+  .appliedJobs {
+    padding: 0 10px;
+  }
+  .driverJobs {
+    padding: 60px 30px 30px 30px;
+  }
+  .driverContact {
+    padding: 60px 10px 30px 10px;
+  }
+  .driverContact .fixedInfo {
+    padding-right: 5px;
+  }
+  .driverfaqs {
+    padding: 90px 10px 30px 10px;
+  }
+}

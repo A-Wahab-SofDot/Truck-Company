@@ -1,0 +1,445 @@
+:root {
+  --primaryBlue: #0f71ba;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(assets//fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "PoppinsMd";
+  src: url(assets//fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "PoppinsSb";
+  src: url(assets//fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: "PoppinsBd";
+  src: url(assets//fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "PoppinsLt";
+  src: url(assets//fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: "PoppinsIt";
+  src: url(assets//fonts/Poppins-Italic.ttf);
+}
+
+body {
+  font: 14px Poppins;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+.header-padding {
+  padding: 40px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+.navbar .logo {
+  width: 133px;
+}
+.navbar .logoText {
+  width: 200px;
+}
+.navbar .nav-item .nav-link {
+  color: var(--primaryBlue);
+  font: 18px PoppinsBd;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.navbar .btnLogin {
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primaryBlue);
+  color: #fff;
+  padding: 10px 0;
+  width: 150px;
+  font: 18px PoppinsBd;
+  margin-left: 10px;
+}
+.bg-navColor {
+  background-color: white;
+}
+
+/* Button Css */
+.navaBarButton {
+  position: relative;
+  transform: translateZ(100px);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  color: var(--primaryBlue);
+  width: 43px;
+  padding: 10px;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.navaBarButton:hover {
+  transform: scale(1.2);
+}
+.navBarLine {
+  display: block;
+  height: 2.5px;
+  width: 100%;
+  background-color: var(--primaryBlue);
+  margin-bottom: 4px;
+  border-radius: 2px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s ease-out;
+  transform: translateZ(0);
+}
+.navBarLineActive {
+  background-color: #fff;
+}
+
+.activeSideBar {
+  position: fixed;
+  z-index: 500;
+  top: 20px;
+  right: 20px;
+}
+.activeSideBar > .navBarLine1,
+.activeSideBar:hover > .navBarLine1 {
+  transform: translateY(6px) rotateZ(-135deg);
+  background-color: #fff !important;
+}
+.activeSideBar > .navBarLine2,
+.activeSideBar:hover > .navBarLine2 {
+  opacity: 0;
+}
+.activeSideBar > .navBarLine3,
+.activeSideBar:hover > .navBarLine3 {
+  transform: translateY(-6px) rotateZ(135deg);
+  background-color: #fff !important;
+}
+/* Button Css Ends */
+
+.flexBetweenCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.headerSideBar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  min-width: 320px;
+  width: 100%;
+  transform: translateY(-150vh);
+  transition-delay: 0.6s;
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 490;
+  background-color: var(--primaryBlue);
+}
+.headerSideBarActive {
+  transform: translateY(0);
+}
+.sideBarItem {
+  color: #fff;
+  font-family: poppins;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.sideBarItemDiv {
+  padding: 24vw 10vw;
+}
+.headerSideBar .btnSignUp {
+  width: 100%;
+  background-color: #afeaaa;
+  margin-bottom: 40px;
+  margin-left: 0;
+  font-size: 15px;
+}
+.headerSideBar .btnLogin {
+  width: 100%;
+  background-color: #afeaee;
+  margin-bottom: 40px;
+  margin-left: 0;
+  font-size: 15px;
+}
+.loginBtnDiv {
+  position: relative;
+}
+.loginBtnDiv .loginDropDown {
+  position: absolute;
+  background-color: #fff;
+  width: 200px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  top: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+}
+.loginBtnDiv .loginDropDown .item {
+  padding: 10px 0;
+  border-bottom: 1px solid #c7c7c7;
+}
+.loginBtnDiv .loginDropDown .item .title {
+  font: 12px poppinsBd;
+}
+.loginBtnDiv .loginDropDown .item .text {
+  font: 12px poppinsMd;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navBar {
+  width: 100%;
+  z-index: 1000;
+  padding: 35px 40px;
+  box-shadow: 5px 6px 18px rgba(0, 0, 0, 0.07);
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar {
+    padding: 35px 20px;
+  }
+}
+
+.navBar .navBrand {
+  font: 24px PoppinsBd;
+  color: black;
+}
+.navBar .icon {
+  margin-right: 20px;
+}
+
+.sideBar {
+  width: 250px;
+  box-shadow: 5px 6px 18px rgba(0, 0, 0, 0.07);
+  background-color: #0f71ba;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  /* height: 100%; */
+}
+
+.sideBarM {
+  width: 250px;
+  box-shadow: 5px 6px 18px rgba(0, 0, 0, 0.07);
+  height: 100vh;
+  position: absolute;
+  transform: translateX(-100vw);
+  transition-delay: 0.6s;
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background-color: var(--primaryBlue);
+  z-index: 9999;
+}
+.sideBarMActive {
+  transform: translateX(0px) !important;
+}
+.sideBarModal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition-delay: 0.6s;
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+.sideBarModalActive {
+  opacity: 1;
+  visibility: visible;
+}
+
+.opacityZero {
+  opacity: 0;
+}
+.navDropDownDiv {
+  position: relative;
+}
+.navDropDown {
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 5px 6px 18px rgba(0, 0, 0, 0.07);
+  padding: 18px;
+  width: 277px;
+}
+.navDropDown .item {
+  font: 14px Rubik;
+  color: var(--colorBlack);
+  margin-bottom: 15px;
+}
+.navDropDown .item:hover {
+  font: 14px Rubik;
+  color: var(--colorBlue);
+  margin-bottom: 15px;
+}
+
+/* sideBar css */
+
+.sideBarDiv .logo {
+  width: 80px;
+}
+.navIcons .icon {
+  width: 28px;
+}
+.sideBarDiv .itemsFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 30px;
+  width: 100%;
+  height: calc(100vh - 228px);
+  padding: 20px 20px;
+}
+.sideBarDiv .icon {
+  width: 11px;
+}
+.sideBarDiv .sideBarItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+}
+.circleIcon {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.sideBarDiv .sideBarItemActive .circleIcon {
+  background-color: white;
+}
+.sideBarDiv .sideBarItemActive .title {
+  color: var(--colorBlue);
+}
+.sideBarDiv .sideBarItem:hover {
+  box-shadow: var(--shadow);
+}
+.sideBarDiv .sideBarItem .title {
+  font: 14px poppins;
+  margin-left: 20px;
+  text-align: left;
+}
+.sideBarDiv .sideBarItem .fTitle {
+  font: 14px poppins;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 125px;
+}
+
+.sideBarDiv .sideBarItem .fTitle .heading {
+  text-align: left;
+}
+.cursorP {
+  cursor: pointer;
+}
+/* content Sec */
+.contentMainSec {
+  background-color: #e7f5f7;
+  height: calc(100vh - 105px);
+  overflow-y: scroll;
+  padding: 30px 30px;
+}
+.contentMainSec::-webkit-scrollbar {
+  display: none;
+}
+.roundBorder {
+  width: 100%;
+  min-height: fit-content;
+  border-radius: 20px;
+  box-shadow: 5px 6px 18px rgba(0, 0, 0, 0.07);
+  background-color: white;
+}
+.dashboardMainDiv {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.dashboardMainDiv .headerSec {
+  position: relative;
+  width: 100%;
+}
+
+.logoSideBar {
+  width: 100%;
+  height: 114px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.logoSideBar img {
+  width: 133px;
+}
+
+.userImage {
+  display: flex;
+  height: 114px;
+  justify-content: center;
+  align-items: center;
+  /* padding: 25px 0; */
+}
+
+.userImage img {
+  width: 64px;
+}
+
+.userImage .content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.userImage .content .name {
+  font: 16px PoppinsBd;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.userImage .content .email {
+  font: 14px Poppins;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .contentMainSec {
+    padding: 30px 20px;
+  }
+}

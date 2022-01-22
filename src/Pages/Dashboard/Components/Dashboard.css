@@ -1,0 +1,588 @@
+/* Slider CSS */
+
+.slider-container {
+  width: 100%;
+  height: 663px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../assets/images/slider.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slider-container .content {
+  width: 722px;
+  height: 292px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container .content .heading {
+  font: 48px PoppinsBd;
+  color: #fff;
+}
+
+.slider-container .content .career {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container .content .career .driver {
+  width: 181px;
+  height: 87px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.slider-container .content .career .driver .heading {
+  font: 14px PoppinsBd;
+  color: var(--primaryBlue);
+  margin-top: 10px;
+}
+
+.slider-container .content .career .truck {
+  width: 181px;
+  height: 87px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  font: 14px PoppinsBd;
+}
+
+.slider-container .content .career .truck .heading {
+  font: 14px PoppinsBd;
+  color: var(--primaryBlue);
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .slider-container .content {
+    transform: scale(0.8);
+  }
+  .slider-container .content .heading {
+    font-size: 28px;
+  }
+  .slider-container .content .career .driver {
+    margin-right: 5px;
+    transform: scale(0.8);
+  }
+  .slider-container .content .career .truck {
+    margin-left: 5px;
+    transform: scale(0.8);
+  }
+}
+
+/* Slider CSS End */
+/* Partner CSS */
+.partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.partner .heading {
+  position: relative;
+  font: 24px PoppinsBd;
+}
+
+.partner .heading::before {
+  content: "";
+  width: 78px;
+  height: 10.5px;
+  background-image: url("../../../assets/images/pleft.svg");
+  position: absolute;
+  top: 50%;
+  right: 110%;
+  transform: translate(0, -50%);
+}
+.partner .heading::after {
+  content: "";
+  width: 78px;
+  height: 10.5px;
+  background-image: url("../../../assets/images/pright.svg");
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translate(0, -50%);
+}
+
+.partnerIcons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.partnerIcons img {
+  height: 79px;
+  margin: 10px;
+}
+
+/* Partner CSS End */
+
+/* Hiring CSS */
+
+.hiring {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+.hiring p {
+  width: 1000px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  font: 14px Poppins;
+  margin-top: -10px;
+  position: absolute;
+  top: 115px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hiring .notification {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 40px 0 40px;
+  box-shadow: 0 -3px 5px rgb(0 0 0 / 20%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: var(--primaryBlue);
+  height: 109px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: white;
+}
+
+.hiring .notification .heading {
+  font: 24px PoppinsBd;
+  color: var(--primaryBlue);
+  padding-bottom: 10px;
+}
+
+.hiring .notification .heading img {
+  width: 35px;
+}
+
+.hiring .notification .paragraph {
+  font: 14px PoppinsBd;
+  color: black;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .hiring .notification .heading {
+    font-size: 18px;
+  }
+  .hiring .notification .paragraph {
+    font-size: 10px;
+  }
+  .hiring p {
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 826px) {
+  .hiring .notification {
+    padding: 10px 10px 0 10px;
+  }
+  .hiring .notification .paragraph {
+    padding-bottom: 0;
+  }
+  .hiring .notification .heading {
+    font-size: 16px;
+  }
+  .hiring .notification .paragraph {
+    font-size: 8px;
+  }
+  .hiring p {
+    font-size: 8px;
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hiring {
+    height: 350px;
+  }
+  .hiring .notification {
+    padding: 5px;
+    width: 360px;
+  }
+  .hiring .notification .paragraph {
+    padding-bottom: 0;
+  }
+  .hiring .notification .heading {
+    font-size: 18px;
+  }
+  .hiring .notification .paragraph {
+    font-size: 12px;
+  }
+  .hiring p {
+    font-size: 14px;
+    width: 360px;
+  }
+}
+/* Hiring CSS End */
+
+.Countries {
+  position: relative;
+}
+
+.Countries p {
+  text-align: center;
+  padding: 0 40px;
+}
+@media only screen and (max-width: 768px) {
+  .Countries .heading {
+    font: 15px PoppinsBd;
+  }
+  .Countries .adjustHeading::before {
+    right: 103% !important;
+    width: 50px !important;
+  }
+  .Countries .adjustHeading::after {
+    left: 103% !important;
+    width: 50px !important;
+  }
+}
+.listCountry {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  font: 24px Poppins;
+  color: Black;
+  margin-bottom: 30px;
+}
+.nameCountry {
+  width: 190px;
+  font: 24px Poppins;
+  color: Black;
+  margin: 10px 100px;
+}
+
+.Countries .truckBg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 450px;
+  z-index: -1;
+}
+
+.Countries .truckBg img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .listCountry {
+    justify-content: center;
+  }
+  .nameCountry {
+    text-align: center;
+  }
+}
+
+.searchSection {
+  width: 100%;
+  padding: 0 80px;
+  position: relative;
+}
+
+.searchSection .searchImageContainer {
+  position: absolute;
+  top: -80px;
+  left: 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+}
+
+.searchSection .searchBox {
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px 50px;
+  font: 14px Poppins;
+}
+
+.searchSection .searchBox .heading {
+  font: 14px PoppinsBd;
+  color: black;
+  padding-left: 150px;
+  margin-bottom: 10px;
+}
+
+.searchSection .searchBox .paragraph1 {
+  padding-left: 150px;
+  margin-bottom: 2px;
+}
+
+.searchSection .searchBox .paragraph2 {
+  margin-bottom: 20px;
+}
+
+.searchSection .searchBox .paragraph3 {
+  padding-right: 230px;
+  margin-bottom: 20px;
+}
+
+.searchSection .searchBox .paragraph4 {
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .searchSection .searchImageContainer {
+    top: -30px;
+  }
+  .searchSection .searchBox .paragraph3 {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .searchSection {
+    padding: 0 10px;
+  }
+  .searchSection .searchBox {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .searchSection .searchImageContainer {
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .searchSection .searchBox .heading {
+    padding-left: 0;
+    padding-top: 190px;
+  }
+  .searchSection .searchBox .paragraph1 {
+    padding-left: 0;
+  }
+}
+
+/* Footer CSS */
+
+.footer {
+  background-color: var(--primaryBlue);
+}
+.footer .logoFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer .logoContainer {
+  width: 248px;
+  height: 73px;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2px;
+}
+
+.footer .logoFlex .logoContainer img {
+  width: 133px;
+}
+
+.footer .footerMenu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer .footerMenu .menuColumn {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px;
+}
+
+.footer .footerMenu .menuColumn .heading {
+  font: 18px PoppinsSb;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer .footerMenu .menuColumn .label {
+  font: 14px Poppins;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.footer .footerIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer .footerIcons .iconContainer {
+  width: 27px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 3px;
+}
+
+.footer .footerIcons .iconContainer img {
+  width: 11px;
+}
+
+.footer .copyRight {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .copyRight h2 {
+  text-align: center;
+  color: #fff;
+  font: 14px PoppinsIt;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: 0.5px solid #fff;
+}
+
+.loginPage {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.panelDesign {
+  height: fit-content;
+  min-height: 100vh;
+}
+
+.RegisterPage .panelDesign {
+  height: auto;
+}
+
+.panelDesign .logoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.panelDesign .logoContainer .logoS {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.panelDesign .panelContainer .heading {
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  font-family: PoppinsSb;
+  height: 15vh;
+  min-height: 105px;
+  line-height: 1;
+}
+
+.panelDesign .panelContainer button {
+  width: 212px;
+  height: 45px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 45px;
+  background-color: red;
+  font: 14px PoppinsSb;
+  border: none;
+  color: #fff;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+}
+
+.panelDesign .panelContainer .notification {
+  font: 14px Poppins;
+  margin-top: 5vh;
+  text-align: center;
+}
+.panelDesign .panelContainer .register {
+  font: 14px Poppins;
+  margin-top: 2vh;
+  text-align: center;
+  color: #00caea;
+}
+
+.loginPage .mainLogo {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.loginPage .mainHeading {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  font: 24px PoppinsBd;
+}
+
+@media only screen and (max-width: 768px) {
+  .loginPage {
+    flex-direction: column;
+    height: auto;
+  }
+  .loginPage .panelDesign {
+    width: 100% !important;
+    height: 100vh !important;
+  }
+  .loginPage .mainHeading {
+    font-size: 20px;
+  }
+  .panelDesign .panelContainer .heading {
+    height: 110px;
+  }
+}
